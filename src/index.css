@@ -2,4 +2,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: #1d1f21;
+  color: #c9cacc;
+}
+
+body a {
+    color: #c9cacc;
+    text-decoration: underline;
 }

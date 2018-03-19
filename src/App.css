@@ -2,13 +2,19 @@
     width: 600px;
     margin: 0 auto;
     line-height: 1.5rem;
+    font-family: 'IBM Plex Mono', monospace;
+    /*font-family: 'Raleway', sans-serif;*/
 }
 
 .App hr {
     margin: 0;
     border: 0;
     height: 1px;
-    background: #ccc;
+    background: #666;
+}
+
+.App h1 {
+    font-weight: normal;
 }
 
 /*
