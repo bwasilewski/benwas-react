@@ -1,4 +1,18 @@
 .App {
+    width: 600px;
+    margin: 0 auto;
+    line-height: 1.5rem;
+}
+
+.App hr {
+    margin: 0;
+    border: 0;
+    height: 1px;
+    background: #ccc;
+}
+
+/*
+.App {
   text-align: center;
 }
 
@@ -21,8 +35,5 @@
 .App-intro {
   font-size: large;
 }
+*/
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}

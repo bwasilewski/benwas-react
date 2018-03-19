@@ -1,0 +1,22 @@
+.Navigation a {
+    color: #666;
+    text-decoration: none;
+}
+
+.Navigation a:hover {
+    text-decoration: underline;
+}
+
+.Navigation li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.Navigation li:last-child {
+    border-right: 0;
+}
+
+.Navigation ul {
+    padding: 0;
+    margin-bottom: 0;
+}

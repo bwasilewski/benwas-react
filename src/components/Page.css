@@ -1,0 +1,15 @@
+.Page {
+    padding: 20px;
+}
+
+.Page h2 {
+    margin-top: 0;
+}
+
+.Page p {
+    margin: 20px 0;
+}
+
+.Page p:first-child {
+    margin-top: 0;
+}

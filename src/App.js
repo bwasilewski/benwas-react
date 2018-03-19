@@ -1,11 +1,10 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
+import Header from './components/Header.js';
 import Home from './components/Home.js';
 import About from './components/About.js';
-import Blog from './components/Blog.js';
 import Contact from './components/Contact.js';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
 
 export default class App extends React.Component {
     constructor(props) {
@@ -16,22 +15,17 @@ export default class App extends React.Component {
 
     render() {
         return(
-            <Router>
-                <div>
-                    <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/about">About</Link></li>
-                        <li><Link to="/blog">Blog</Link></li>
-                        <li><Link to="/contact">Contact</Link></li>
-                    </ul>
-                    <hr />
-
-                    <Route exact path="/" component={Home} />
-                    <Route path="/about" component={About} />
-                    <Route path="/blog" component={Blog} />
-                    <Route path="/contact" component={Contact} />
-                </div>
-            </Router>
-        )
+            <div className="App">
+                <Header />
+                <hr />
+                <Router>
+                    <div>
+                        <Route exact path="/" component={Home} />
+                        <Route path="/about" component={About} />
+                        <Route path="/contact" component={Contact} />
+                    </div>
+                </Router>
+            </div>
+        );
     }
 }
