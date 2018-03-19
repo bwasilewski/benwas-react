@@ -1,21 +1,29 @@
 import React, { Component } from 'react';
-import Header from './components/header/Header.js';
-import Footer from './components/footer/Footer.js';
-import logo from './logo.svg';
-import './App.css';
+import Home from './pages/home/Home.js';
+import About from './pages/about/About.js';
+import Contact from './pages/contact/Contact.js';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Header />
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Footer />
-      </div>
-    );
-  }
-}
+class BasicExample extends Component {
+    render() {
+        return (
+            <Router>
+                <div>
+                    <ul>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
+                    </ul>
+                    <hr />
 
-export default App;
+                    <Route exact path="/" component={Home} />
+                    <Route path="/about" component={About} />
+                    <Route path="/contact" component={Contact} />
+                </div>
+            </Router>
+        );
+    }
+};
+
+
+export default BasicExample;
